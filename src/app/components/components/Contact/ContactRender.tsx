@@ -5,7 +5,10 @@ type ContactItem = {
 }
 
 export const ContactRender = ({contact}:ContactItem) => {
+    console.log(contact);
+    
     const {id, firstName, surname, address, phone, isDone} = contact;
+    console.log(contact)
 
     return  <ul>
                 <li key={contact.id}>

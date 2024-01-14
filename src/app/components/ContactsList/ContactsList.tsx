@@ -42,7 +42,9 @@ export const ContactsList = () => {
                     <button onClick={handleAddContact}>Добавить контакт</button>
                 </div>
                 <ul className="contacts__list">
-                    <ContactRender/>
+                        {data.map((contact) => <ContactRender contact={contact}/>)}
+                    
                 </ul>
             </div> 
 }
+
